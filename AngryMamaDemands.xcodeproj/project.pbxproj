@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		864F444D29BAAE98009682B9 /* addDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* addDemandView.swift */; };
-		864F444E29BAAE98009682B9 /* addDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* addDemandView.swift */; };
+		864F444D29BAAE98009682B9 /* AddDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* AddDemandView.swift */; };
+		864F444E29BAAE98009682B9 /* AddDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* AddDemandView.swift */; };
 		864F445029BAAEC6009682B9 /* DemandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444F29BAAEC6009682B9 /* DemandType.swift */; };
 		864F445129BAAEC6009682B9 /* DemandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444F29BAAEC6009682B9 /* DemandType.swift */; };
 		864F445329BAC4AB009682B9 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445229BAC4AB009682B9 /* AddMemberView.swift */; };
@@ -29,14 +29,15 @@
 		8650FF5629B825E600DDACB3 /* AngryMamaDemandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF5529B825E600DDACB3 /* AngryMamaDemandsTests.swift */; };
 		8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */; };
 		8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */; };
+		8685271329BAD843006AFD16 /* DetailHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685271229BAD843006AFD16 /* DetailHouseView.swift */; };
 		86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
 		86B5AA2B29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
 		86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */; };
 		86B5AA2E29B935DF00FFA546 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */; };
 		86B5AA3129B9360B00FFA546 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3029B9360B00FFA546 /* Constant.swift */; };
 		86B5AA3229B9360B00FFA546 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3029B9360B00FFA546 /* Constant.swift */; };
-		86B5AA3729BAA21000FFA546 /* addHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* addHouseView.swift */; };
-		86B5AA3829BAA21000FFA546 /* addHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* addHouseView.swift */; };
+		86B5AA3729BAA21000FFA546 /* AddHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* AddHouseView.swift */; };
+		86B5AA3829BAA21000FFA546 /* AddHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* AddHouseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		864F444C29BAAE97009682B9 /* addDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDemandView.swift; sourceTree = "<group>"; };
+		864F444C29BAAE97009682B9 /* AddDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDemandView.swift; sourceTree = "<group>"; };
 		864F444F29BAAEC6009682B9 /* DemandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemandType.swift; sourceTree = "<group>"; };
 		864F445229BAC4AB009682B9 /* AddMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberView.swift; sourceTree = "<group>"; };
 		864F445529BAC54C009682B9 /* HouseBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseBlockView.swift; sourceTree = "<group>"; };
@@ -79,11 +80,12 @@
 		8650FF5B29B825E600DDACB3 /* AngryMamaDemandsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryMamaDemandsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITests.swift; sourceTree = "<group>"; };
 		8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8685271229BAD843006AFD16 /* DetailHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHouseView.swift; sourceTree = "<group>"; };
 		86B5AA2829B8C9C000FFA546 /* AngryMamaDemands.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngryMamaDemands.entitlements; sourceTree = "<group>"; };
 		86B5AA2929B934F400FFA546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		86B5AA3029B9360B00FFA546 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		86B5AA3629BAA21000FFA546 /* addHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addHouseView.swift; sourceTree = "<group>"; };
+		86B5AA3629BAA21000FFA546 /* AddHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				8650FF4029B825E500DDACB3 /* ContentView.swift */,
-				86B5AA3629BAA21000FFA546 /* addHouseView.swift */,
+				86B5AA3629BAA21000FFA546 /* AddHouseView.swift */,
+				8685271229BAD843006AFD16 /* DetailHouseView.swift */,
 				864F445529BAC54C009682B9 /* HouseBlockView.swift */,
-				864F444C29BAAE97009682B9 /* addDemandView.swift */,
+				864F444C29BAAE97009682B9 /* AddDemandView.swift */,
 				864F445229BAC4AB009682B9 /* AddMemberView.swift */,
 			);
 			path = View;
@@ -343,15 +346,16 @@
 				864F445F29BAC5BD009682B9 /* SIMD3.swift in Sources */,
 				864F445D29BAC5BD009682B9 /* UIViewControllerRepresentable.swift in Sources */,
 				864F445629BAC54C009682B9 /* HouseBlockView.swift in Sources */,
-				86B5AA3729BAA21000FFA546 /* addHouseView.swift in Sources */,
+				86B5AA3729BAA21000FFA546 /* AddHouseView.swift in Sources */,
 				8650FF4829B825E600DDACB3 /* Persistence.swift in Sources */,
 				8650FF4129B825E500DDACB3 /* ContentView.swift in Sources */,
 				8650FF4B29B825E600DDACB3 /* AngryMamaDemands.xcdatamodeld in Sources */,
 				864F445329BAC4AB009682B9 /* AddMemberView.swift in Sources */,
 				864F446029BAC5BD009682B9 /* BlurView.swift in Sources */,
 				86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */,
+				8685271329BAD843006AFD16 /* DetailHouseView.swift in Sources */,
 				864F445E29BAC5BD009682B9 /* Color.swift in Sources */,
-				864F444D29BAAE98009682B9 /* addDemandView.swift in Sources */,
+				864F444D29BAAE98009682B9 /* AddDemandView.swift in Sources */,
 				86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */,
 				864F445029BAAEC6009682B9 /* DemandType.swift in Sources */,
 				8650FF3F29B825E500DDACB3 /* AngryMamaDemandsApp.swift in Sources */,
@@ -377,9 +381,9 @@
 				8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */,
 				864F445729BAC54C009682B9 /* HouseBlockView.swift in Sources */,
 				864F445429BAC4AB009682B9 /* AddMemberView.swift in Sources */,
-				86B5AA3829BAA21000FFA546 /* addHouseView.swift in Sources */,
+				86B5AA3829BAA21000FFA546 /* AddHouseView.swift in Sources */,
 				8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */,
-				864F444E29BAAE98009682B9 /* addDemandView.swift in Sources */,
+				864F444E29BAAE98009682B9 /* AddDemandView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

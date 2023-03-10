@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct AddMemberView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State private var firstName: String = ""
     @State private var lasttName: String = ""
+    
+    var house: House? = nil
+    
+    var member: Member {
+        let shared = CoreDataStack.shared
+        let context = shared.context
+        
+        let member = Member(context: context)
+        member.firstName = ""
+        member.lastName = ""
+        
+        return member
+    }
     
     var body: some View {
         NavigationView {
@@ -28,21 +43,42 @@ struct AddMemberView: View {
                 }
                 
                 Button("Save") {
-                    print("Submit")
+                    saveMember()
+                    dismiss()
                 }
                 
                 Button("Cancel") {
-                    print("Submit")
+                    rollBack()
+                    dismiss()
                 }
                 .foregroundColor(.red)
             }
             .navigationTitle("Member")
         }
     }
+    
+    private func rollBack() {
+        let shared = CoreDataStack.shared
+        shared.context.rollback()
+    }
+    
+    private func saveMember() {
+        let shared = CoreDataStack.shared
+        member.firstName = firstName
+        member.lastName = lasttName
+        member.house = house
+        shared.save()
+    }
 }
 
 struct AddMemberView_Previews: PreviewProvider {
     static var previews: some View {
-        AddMemberView()
+        let shared = CoreDataStack.preview
+        let context = shared.context
+        
+        let house = House(context: context)
+        house.title = "House"
+        
+        return AddMemberView(house: house)
     }
 }

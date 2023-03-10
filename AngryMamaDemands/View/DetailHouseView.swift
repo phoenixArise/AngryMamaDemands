@@ -1,5 +1,5 @@
 //
-//  addHouseView.swift
+//  DetailHouseView.swift
 //  AngryMamaDemands
 //
 //  Created by Brian Seo on 2023-03-09.
@@ -7,22 +7,23 @@
 
 import SwiftUI
 import PhotosUI
-import Combine
 
-struct AddHouseView: View {
+struct DetailHouseView: View {
     @Environment(\.dismiss) var dismiss
-    @Environment(\.managedObjectContext) var context
+    
+    var house: House
+    
+    init(house: House) {
+        self.house = house
+    }
     
     private var titleOfThisView = "House"
     
-    @State private var house: House
-       
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Member.lastName, ascending: true)],
         animation: .default)
     private var members: FetchedResults<Member>
     
-        
     @State private var showAddMemberView = false
     
     @State private var photosPickerItem: PhotosPickerItem? = nil
@@ -69,9 +70,7 @@ struct AddHouseView: View {
                 }
                 
                 Section {
-                    List(members, id: \.id) { member in
-                        Text("\(member.firstName ?? "") \(member.firstName ?? "")")
-                    }
+                    Text("A Member")
                 } header: {
                     HStack {
                         Text("Members")
@@ -86,7 +85,6 @@ struct AddHouseView: View {
                 }
                 
                 Button("Save") {
-                    saveHouse()
                     dismiss()
                 }
                 .disabled(name.isEmpty)
@@ -96,19 +94,17 @@ struct AddHouseView: View {
                 }
                 .foregroundColor(.red)
             }
-            .sheet(isPresented: $showAddMemberView, content: {
-                if let house = house {
-                    AddMemberView(house: house)
-                } else {
-                    Text("House Not Found")
-                }
-            })
             .navigationTitle(titleOfThisView)
         }
     }
     
-    private func saveHouse() {
+    private func addHouse() {
         let shared = CoreDataStack.shared
+        let context = shared.context
+        
+        let house = House(context: context)
+        house.title = name
+        
         shared.save()
     }
     
@@ -124,5 +120,20 @@ struct AddHouseView: View {
         static var previews: some View {
             AddHouseView()
         }
+    }
+}
+
+
+struct DetailHouseView_Previews: PreviewProvider {
+    static var previews: some View {
+        let preview = CoreDataStack.preview
+        let context = preview.context
+        
+        let house = House(context: context)
+        house.title = "House"
+        
+        preview.save()
+        
+        return DetailHouseView(house: house)
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct addDemandView: View {
+struct AddDemandView: View {
     @Environment(\.calendar) var calendar
     
     @State private var name = ""
@@ -106,7 +106,7 @@ struct addDemandView: View {
 
 struct addDemandView_Previews: PreviewProvider {
     static var previews: some View {
-        addDemandView()
+        AddDemandView()
     }
 }
 
