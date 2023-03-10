@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		864F444D29BAAE98009682B9 /* addDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* addDemandView.swift */; };
+		864F444E29BAAE98009682B9 /* addDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444C29BAAE97009682B9 /* addDemandView.swift */; };
+		864F445029BAAEC6009682B9 /* DemandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444F29BAAEC6009682B9 /* DemandType.swift */; };
+		864F445129BAAEC6009682B9 /* DemandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F444F29BAAEC6009682B9 /* DemandType.swift */; };
+		864F445329BAC4AB009682B9 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445229BAC4AB009682B9 /* AddMemberView.swift */; };
+		864F445429BAC4AB009682B9 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445229BAC4AB009682B9 /* AddMemberView.swift */; };
+		864F445629BAC54C009682B9 /* HouseBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445529BAC54C009682B9 /* HouseBlockView.swift */; };
+		864F445729BAC54C009682B9 /* HouseBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445529BAC54C009682B9 /* HouseBlockView.swift */; };
+		864F445D29BAC5BD009682B9 /* UIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445829BAC5BD009682B9 /* UIViewControllerRepresentable.swift */; };
+		864F445E29BAC5BD009682B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445929BAC5BD009682B9 /* Color.swift */; };
+		864F445F29BAC5BD009682B9 /* SIMD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445A29BAC5BD009682B9 /* SIMD3.swift */; };
+		864F446029BAC5BD009682B9 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445B29BAC5BD009682B9 /* BlurView.swift */; };
+		864F446129BAC5BD009682B9 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F445C29BAC5BD009682B9 /* Hashable.swift */; };
 		8650FF3F29B825E500DDACB3 /* AngryMamaDemandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF3E29B825E500DDACB3 /* AngryMamaDemandsApp.swift */; };
 		8650FF4129B825E500DDACB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF4029B825E500DDACB3 /* ContentView.swift */; };
 		8650FF4329B825E600DDACB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8650FF4229B825E600DDACB3 /* Assets.xcassets */; };
@@ -16,6 +29,14 @@
 		8650FF5629B825E600DDACB3 /* AngryMamaDemandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF5529B825E600DDACB3 /* AngryMamaDemandsTests.swift */; };
 		8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */; };
 		8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */; };
+		86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
+		86B5AA2B29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
+		86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */; };
+		86B5AA2E29B935DF00FFA546 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */; };
+		86B5AA3129B9360B00FFA546 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3029B9360B00FFA546 /* Constant.swift */; };
+		86B5AA3229B9360B00FFA546 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3029B9360B00FFA546 /* Constant.swift */; };
+		86B5AA3729BAA21000FFA546 /* addHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* addHouseView.swift */; };
+		86B5AA3829BAA21000FFA546 /* addHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA3629BAA21000FFA546 /* addHouseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		864F444C29BAAE97009682B9 /* addDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDemandView.swift; sourceTree = "<group>"; };
+		864F444F29BAAEC6009682B9 /* DemandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemandType.swift; sourceTree = "<group>"; };
+		864F445229BAC4AB009682B9 /* AddMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberView.swift; sourceTree = "<group>"; };
+		864F445529BAC54C009682B9 /* HouseBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseBlockView.swift; sourceTree = "<group>"; };
+		864F445829BAC5BD009682B9 /* UIViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		864F445929BAC5BD009682B9 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		864F445A29BAC5BD009682B9 /* SIMD3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIMD3.swift; sourceTree = "<group>"; };
+		864F445B29BAC5BD009682B9 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		864F445C29BAC5BD009682B9 /* Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
 		8650FF3B29B825E500DDACB3 /* AngryMamaDemands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryMamaDemands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8650FF3E29B825E500DDACB3 /* AngryMamaDemandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsApp.swift; sourceTree = "<group>"; };
 		8650FF4029B825E500DDACB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +79,11 @@
 		8650FF5B29B825E600DDACB3 /* AngryMamaDemandsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryMamaDemandsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITests.swift; sourceTree = "<group>"; };
 		8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86B5AA2829B8C9C000FFA546 /* AngryMamaDemands.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngryMamaDemands.entitlements; sourceTree = "<group>"; };
+		86B5AA2929B934F400FFA546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		86B5AA3029B9360B00FFA546 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		86B5AA3629BAA21000FFA546 /* addHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addHouseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864F446229BAC5C8009682B9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				864F445B29BAC5BD009682B9 /* BlurView.swift */,
+				864F445929BAC5BD009682B9 /* Color.swift */,
+				864F445C29BAC5BD009682B9 /* Hashable.swift */,
+				864F445A29BAC5BD009682B9 /* SIMD3.swift */,
+				864F445829BAC5BD009682B9 /* UIViewControllerRepresentable.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		864F446329BAC642009682B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8650FF4029B825E500DDACB3 /* ContentView.swift */,
+				86B5AA3629BAA21000FFA546 /* addHouseView.swift */,
+				864F445529BAC54C009682B9 /* HouseBlockView.swift */,
+				864F444C29BAAE97009682B9 /* addDemandView.swift */,
+				864F445229BAC4AB009682B9 /* AddMemberView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8650FF3229B825E500DDACB3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +158,14 @@
 		8650FF3D29B825E500DDACB3 /* AngryMamaDemands */ = {
 			isa = PBXGroup;
 			children = (
+				86B5AA2829B8C9C000FFA546 /* AngryMamaDemands.entitlements */,
+				864F446229BAC5C8009682B9 /* extension */,
+				86B5AA2F29B935FF00FFA546 /* Helper */,
 				8650FF3E29B825E500DDACB3 /* AngryMamaDemandsApp.swift */,
-				8650FF4029B825E500DDACB3 /* ContentView.swift */,
+				864F446329BAC642009682B9 /* View */,
+				864F444F29BAAEC6009682B9 /* DemandType.swift */,
+				86B5AA2929B934F400FFA546 /* AppDelegate.swift */,
 				8650FF4229B825E600DDACB3 /* Assets.xcassets */,
-				8650FF4729B825E600DDACB3 /* Persistence.swift */,
 				8650FF4C29B825E600DDACB3 /* Info.plist */,
 				8650FF4929B825E600DDACB3 /* AngryMamaDemands.xcdatamodeld */,
 				8650FF4429B825E600DDACB3 /* Preview Content */,
@@ -133,6 +196,16 @@
 				8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */,
 			);
 			path = AngryMamaDemandsUITests;
+			sourceTree = "<group>";
+		};
+		86B5AA2F29B935FF00FFA546 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */,
+				8650FF4729B825E600DDACB3 /* Persistence.swift */,
+				86B5AA3029B9360B00FFA546 /* Constant.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +338,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B5AA3129B9360B00FFA546 /* Constant.swift in Sources */,
+				864F446129BAC5BD009682B9 /* Hashable.swift in Sources */,
+				864F445F29BAC5BD009682B9 /* SIMD3.swift in Sources */,
+				864F445D29BAC5BD009682B9 /* UIViewControllerRepresentable.swift in Sources */,
+				864F445629BAC54C009682B9 /* HouseBlockView.swift in Sources */,
+				86B5AA3729BAA21000FFA546 /* addHouseView.swift in Sources */,
 				8650FF4829B825E600DDACB3 /* Persistence.swift in Sources */,
 				8650FF4129B825E500DDACB3 /* ContentView.swift in Sources */,
 				8650FF4B29B825E600DDACB3 /* AngryMamaDemands.xcdatamodeld in Sources */,
+				864F445329BAC4AB009682B9 /* AddMemberView.swift in Sources */,
+				864F446029BAC5BD009682B9 /* BlurView.swift in Sources */,
+				86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */,
+				864F445E29BAC5BD009682B9 /* Color.swift in Sources */,
+				864F444D29BAAE98009682B9 /* addDemandView.swift in Sources */,
+				86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */,
+				864F445029BAAEC6009682B9 /* DemandType.swift in Sources */,
 				8650FF3F29B825E500DDACB3 /* AngryMamaDemandsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864F445129BAAEC6009682B9 /* DemandType.swift in Sources */,
+				86B5AA2E29B935DF00FFA546 /* CoreDataStack.swift in Sources */,
+				86B5AA2B29B934F400FFA546 /* AppDelegate.swift in Sources */,
 				8650FF5629B825E600DDACB3 /* AngryMamaDemandsTests.swift in Sources */,
+				86B5AA3229B9360B00FFA546 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */,
+				864F445729BAC54C009682B9 /* HouseBlockView.swift in Sources */,
+				864F445429BAC4AB009682B9 /* AddMemberView.swift in Sources */,
+				86B5AA3829BAA21000FFA546 /* addHouseView.swift in Sources */,
 				8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */,
+				864F444E29BAAE98009682B9 /* addDemandView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,12 +518,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AngryMamaDemands/AngryMamaDemands.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AngryMamaDemands/Preview Content\"";
 				DEVELOPMENT_TEAM = F6K6BFNLSM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngryMamaDemands/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,12 +549,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AngryMamaDemands/AngryMamaDemands.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AngryMamaDemands/Preview Content\"";
 				DEVELOPMENT_TEAM = F6K6BFNLSM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngryMamaDemands/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

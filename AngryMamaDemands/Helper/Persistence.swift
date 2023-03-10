@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "AngryMamaDemands")
+        container = NSPersistentCloudKitContainer(name: Constant.containerName)
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -52,5 +52,28 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func saveContext() {
+        let context = container.viewContext
+        guard context.hasChanges else {
+            return
+        }
+        do {
+            try context.save()
+        } catch let e {
+            print(e.localizedDescription)
+        }
+    }
+    
+    func previewContentGenerate() {
+        let context = container.viewContext
+        
+        for i in 0...25 {
+            let house = House(context: context)
+            house.title = "House \(i)"
+        }
+        
+        saveContext()
     }
 }
