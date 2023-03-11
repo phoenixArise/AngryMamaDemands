@@ -5,6 +5,7 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Member" inverseName="house" inverseEntity="Member"/>
     </entity>

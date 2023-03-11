@@ -13,6 +13,8 @@ struct DetailHouseView: View {
     
     var house: House
     
+    @ObservedObject var viewModel = HouseViewModel()
+    
     init(house: House) {
         self.house = house
     }
@@ -53,7 +55,7 @@ struct DetailHouseView: View {
                             }
                             
                         } else {
-                            HouseBlockView(name: name)
+                            HouseBlockView(name: name, viewModel: viewModel)
                         }
                     }
                     .onChange(of: photosPickerItem) { selectedPhoto in
@@ -82,6 +84,12 @@ struct DetailHouseView: View {
                         }
 
                     }
+                }
+                
+                Section {
+                    
+                } header: {
+                    Text("Demands")
                 }
                 
                 Button("Save") {
@@ -116,24 +124,20 @@ struct DetailHouseView: View {
         }
     }
     
-    struct addHouseView_Previews: PreviewProvider {
+    struct DetailHouseView_Previews: PreviewProvider {
         static var previews: some View {
-            AddHouseView()
+            let preview = CoreDataStack.preview
+            let context = preview.context
+            
+            let house = House(context: context)
+            house.title = "House"
+            
+            preview.save()
+            
+            return DetailHouseView(house: house)
         }
     }
 }
 
 
-struct DetailHouseView_Previews: PreviewProvider {
-    static var previews: some View {
-        let preview = CoreDataStack.preview
-        let context = preview.context
-        
-        let house = House(context: context)
-        house.title = "House"
-        
-        preview.save()
-        
-        return DetailHouseView(house: house)
-    }
-}
+

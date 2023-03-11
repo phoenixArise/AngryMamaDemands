@@ -30,6 +30,28 @@
 		8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */; };
 		8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */; };
 		8685271329BAD843006AFD16 /* DetailHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685271229BAD843006AFD16 /* DetailHouseView.swift */; };
+		86996D2E29BBDBFF00222C11 /* AddHouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3E29BBCA22006E0832 /* AddHouseViewModel.swift */; };
+		86996D2F29BBDC0200222C11 /* AddHouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3E29BBCA22006E0832 /* AddHouseViewModel.swift */; };
+		86996D3129BBDC5E00222C11 /* AddDemandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3029BBDC5E00222C11 /* AddDemandViewModel.swift */; };
+		86996D3229BBDC5E00222C11 /* AddDemandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3029BBDC5E00222C11 /* AddDemandViewModel.swift */; };
+		86996D3429BBDC8200222C11 /* DemandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3329BBDC8200222C11 /* DemandViewModel.swift */; };
+		86996D3529BBDC8200222C11 /* DemandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3329BBDC8200222C11 /* DemandViewModel.swift */; };
+		86996D3829BBE46100222C11 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3729BBE46100222C11 /* CheckboxToggleStyle.swift */; };
+		86996D3929BBE46100222C11 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3729BBE46100222C11 /* CheckboxToggleStyle.swift */; };
+		86996D3E29BC04A200222C11 /* InstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3D29BC04A200222C11 /* InstructionViewModel.swift */; };
+		86996D3F29BC04A200222C11 /* InstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D3D29BC04A200222C11 /* InstructionViewModel.swift */; };
+		86996D4129BC053500222C11 /* AddInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D4029BC053500222C11 /* AddInstructionView.swift */; };
+		86996D4229BC053500222C11 /* AddInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D4029BC053500222C11 /* AddInstructionView.swift */; };
+		86996D4429BC057700222C11 /* AddInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D4329BC057700222C11 /* AddInstructionViewModel.swift */; };
+		86996D4529BC057700222C11 /* AddInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86996D4329BC057700222C11 /* AddInstructionViewModel.swift */; };
+		86B41E3429BBC745006E0832 /* MemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3329BBC745006E0832 /* MemberViewModel.swift */; };
+		86B41E3529BBC745006E0832 /* MemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3329BBC745006E0832 /* MemberViewModel.swift */; };
+		86B41E3729BBC788006E0832 /* HouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3629BBC788006E0832 /* HouseViewModel.swift */; };
+		86B41E3829BBC788006E0832 /* HouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3629BBC788006E0832 /* HouseViewModel.swift */; };
+		86B41E3A29BBC93C006E0832 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3929BBC93C006E0832 /* ViewModel.swift */; };
+		86B41E3B29BBC93C006E0832 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3929BBC93C006E0832 /* ViewModel.swift */; };
+		86B41E4029BBCB63006E0832 /* AddMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3F29BBCB63006E0832 /* AddMemberViewModel.swift */; };
+		86B41E4129BBCB63006E0832 /* AddMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B41E3F29BBCB63006E0832 /* AddMemberViewModel.swift */; };
 		86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
 		86B5AA2B29B934F400FFA546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2929B934F400FFA546 /* AppDelegate.swift */; };
 		86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */; };
@@ -81,6 +103,17 @@
 		8650FF5F29B825E600DDACB3 /* AngryMamaDemandsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITests.swift; sourceTree = "<group>"; };
 		8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryMamaDemandsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8685271229BAD843006AFD16 /* DetailHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHouseView.swift; sourceTree = "<group>"; };
+		86996D3029BBDC5E00222C11 /* AddDemandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDemandViewModel.swift; sourceTree = "<group>"; };
+		86996D3329BBDC8200222C11 /* DemandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemandViewModel.swift; sourceTree = "<group>"; };
+		86996D3729BBE46100222C11 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		86996D3D29BC04A200222C11 /* InstructionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewModel.swift; sourceTree = "<group>"; };
+		86996D4029BC053500222C11 /* AddInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInstructionView.swift; sourceTree = "<group>"; };
+		86996D4329BC057700222C11 /* AddInstructionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInstructionViewModel.swift; sourceTree = "<group>"; };
+		86B41E3329BBC745006E0832 /* MemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewModel.swift; sourceTree = "<group>"; };
+		86B41E3629BBC788006E0832 /* HouseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewModel.swift; sourceTree = "<group>"; };
+		86B41E3929BBC93C006E0832 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		86B41E3E29BBCA22006E0832 /* AddHouseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseViewModel.swift; sourceTree = "<group>"; };
+		86B41E3F29BBCB63006E0832 /* AddMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewModel.swift; sourceTree = "<group>"; };
 		86B5AA2829B8C9C000FFA546 /* AngryMamaDemands.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AngryMamaDemands.entitlements; sourceTree = "<group>"; };
 		86B5AA2929B934F400FFA546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B5AA2C29B935DF00FFA546 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -129,11 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				8650FF4029B825E500DDACB3 /* ContentView.swift */,
-				86B5AA3629BAA21000FFA546 /* AddHouseView.swift */,
-				8685271229BAD843006AFD16 /* DetailHouseView.swift */,
 				864F445529BAC54C009682B9 /* HouseBlockView.swift */,
-				864F444C29BAAE97009682B9 /* AddDemandView.swift */,
-				864F445229BAC4AB009682B9 /* AddMemberView.swift */,
+				86B41E4229BBD7B9006E0832 /* AddMember */,
+				86B41E3D29BBCA22006E0832 /* AddHouse */,
+				8685271229BAD843006AFD16 /* DetailHouseView.swift */,
+				86996D4029BC053500222C11 /* AddInstructionView.swift */,
+				86996D4329BC057700222C11 /* AddInstructionViewModel.swift */,
+				86B41E4329BBDB3A006E0832 /* AddDemand */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,9 +197,11 @@
 			isa = PBXGroup;
 			children = (
 				86B5AA2829B8C9C000FFA546 /* AngryMamaDemands.entitlements */,
+				8650FF3E29B825E500DDACB3 /* AngryMamaDemandsApp.swift */,
+				86996D3629BBE43E00222C11 /* TemporaryMemory */,
 				864F446229BAC5C8009682B9 /* extension */,
 				86B5AA2F29B935FF00FFA546 /* Helper */,
-				8650FF3E29B825E500DDACB3 /* AngryMamaDemandsApp.swift */,
+				86B41E3C29BBC9FD006E0832 /* BareboneVM */,
 				864F446329BAC642009682B9 /* View */,
 				864F444F29BAAEC6009682B9 /* DemandType.swift */,
 				86B5AA2929B934F400FFA546 /* AppDelegate.swift */,
@@ -199,6 +236,53 @@
 				8650FF6129B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift */,
 			);
 			path = AngryMamaDemandsUITests;
+			sourceTree = "<group>";
+		};
+		86996D3629BBE43E00222C11 /* TemporaryMemory */ = {
+			isa = PBXGroup;
+			children = (
+				86996D3729BBE46100222C11 /* CheckboxToggleStyle.swift */,
+			);
+			path = TemporaryMemory;
+			sourceTree = "<group>";
+		};
+		86B41E3C29BBC9FD006E0832 /* BareboneVM */ = {
+			isa = PBXGroup;
+			children = (
+				86B41E3929BBC93C006E0832 /* ViewModel.swift */,
+				86996D3D29BC04A200222C11 /* InstructionViewModel.swift */,
+				86B41E3629BBC788006E0832 /* HouseViewModel.swift */,
+				86B41E3329BBC745006E0832 /* MemberViewModel.swift */,
+				86996D3329BBDC8200222C11 /* DemandViewModel.swift */,
+			);
+			path = BareboneVM;
+			sourceTree = "<group>";
+		};
+		86B41E3D29BBCA22006E0832 /* AddHouse */ = {
+			isa = PBXGroup;
+			children = (
+				86B5AA3629BAA21000FFA546 /* AddHouseView.swift */,
+				86B41E3E29BBCA22006E0832 /* AddHouseViewModel.swift */,
+			);
+			path = AddHouse;
+			sourceTree = "<group>";
+		};
+		86B41E4229BBD7B9006E0832 /* AddMember */ = {
+			isa = PBXGroup;
+			children = (
+				864F445229BAC4AB009682B9 /* AddMemberView.swift */,
+				86B41E3F29BBCB63006E0832 /* AddMemberViewModel.swift */,
+			);
+			path = AddMember;
+			sourceTree = "<group>";
+		};
+		86B41E4329BBDB3A006E0832 /* AddDemand */ = {
+			isa = PBXGroup;
+			children = (
+				864F444C29BAAE97009682B9 /* AddDemandView.swift */,
+				86996D3029BBDC5E00222C11 /* AddDemandViewModel.swift */,
+			);
+			path = AddDemand;
 			sourceTree = "<group>";
 		};
 		86B5AA2F29B935FF00FFA546 /* Helper */ = {
@@ -341,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B41E3729BBC788006E0832 /* HouseViewModel.swift in Sources */,
 				86B5AA3129B9360B00FFA546 /* Constant.swift in Sources */,
 				864F446129BAC5BD009682B9 /* Hashable.swift in Sources */,
 				864F445F29BAC5BD009682B9 /* SIMD3.swift in Sources */,
@@ -348,17 +433,27 @@
 				864F445629BAC54C009682B9 /* HouseBlockView.swift in Sources */,
 				86B5AA3729BAA21000FFA546 /* AddHouseView.swift in Sources */,
 				8650FF4829B825E600DDACB3 /* Persistence.swift in Sources */,
+				86996D3429BBDC8200222C11 /* DemandViewModel.swift in Sources */,
+				86996D4129BC053500222C11 /* AddInstructionView.swift in Sources */,
 				8650FF4129B825E500DDACB3 /* ContentView.swift in Sources */,
+				86996D2E29BBDBFF00222C11 /* AddHouseViewModel.swift in Sources */,
+				86B41E3429BBC745006E0832 /* MemberViewModel.swift in Sources */,
 				8650FF4B29B825E600DDACB3 /* AngryMamaDemands.xcdatamodeld in Sources */,
 				864F445329BAC4AB009682B9 /* AddMemberView.swift in Sources */,
 				864F446029BAC5BD009682B9 /* BlurView.swift in Sources */,
+				86B41E3A29BBC93C006E0832 /* ViewModel.swift in Sources */,
 				86B5AA2D29B935DF00FFA546 /* CoreDataStack.swift in Sources */,
 				8685271329BAD843006AFD16 /* DetailHouseView.swift in Sources */,
+				86996D3E29BC04A200222C11 /* InstructionViewModel.swift in Sources */,
+				86996D3129BBDC5E00222C11 /* AddDemandViewModel.swift in Sources */,
 				864F445E29BAC5BD009682B9 /* Color.swift in Sources */,
+				86996D3829BBE46100222C11 /* CheckboxToggleStyle.swift in Sources */,
+				86B41E4029BBCB63006E0832 /* AddMemberViewModel.swift in Sources */,
 				864F444D29BAAE98009682B9 /* AddDemandView.swift in Sources */,
 				86B5AA2A29B934F400FFA546 /* AppDelegate.swift in Sources */,
 				864F445029BAAEC6009682B9 /* DemandType.swift in Sources */,
 				8650FF3F29B825E500DDACB3 /* AngryMamaDemandsApp.swift in Sources */,
+				86996D4429BC057700222C11 /* AddInstructionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +461,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B41E4129BBCB63006E0832 /* AddMemberViewModel.swift in Sources */,
 				864F445129BAAEC6009682B9 /* DemandType.swift in Sources */,
+				86B41E3B29BBC93C006E0832 /* ViewModel.swift in Sources */,
+				86B41E3529BBC745006E0832 /* MemberViewModel.swift in Sources */,
 				86B5AA2E29B935DF00FFA546 /* CoreDataStack.swift in Sources */,
+				86996D3529BBDC8200222C11 /* DemandViewModel.swift in Sources */,
 				86B5AA2B29B934F400FFA546 /* AppDelegate.swift in Sources */,
+				86996D3929BBE46100222C11 /* CheckboxToggleStyle.swift in Sources */,
+				86996D3229BBDC5E00222C11 /* AddDemandViewModel.swift in Sources */,
 				8650FF5629B825E600DDACB3 /* AngryMamaDemandsTests.swift in Sources */,
+				86996D2F29BBDC0200222C11 /* AddHouseViewModel.swift in Sources */,
 				86B5AA3229B9360B00FFA546 /* Constant.swift in Sources */,
+				86B41E3829BBC788006E0832 /* HouseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +482,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8650FF6029B825E600DDACB3 /* AngryMamaDemandsUITests.swift in Sources */,
+				86996D4529BC057700222C11 /* AddInstructionViewModel.swift in Sources */,
+				86996D4229BC053500222C11 /* AddInstructionView.swift in Sources */,
 				864F445729BAC54C009682B9 /* HouseBlockView.swift in Sources */,
 				864F445429BAC4AB009682B9 /* AddMemberView.swift in Sources */,
+				86996D3F29BC04A200222C11 /* InstructionViewModel.swift in Sources */,
 				86B5AA3829BAA21000FFA546 /* AddHouseView.swift in Sources */,
 				8650FF6229B825E600DDACB3 /* AngryMamaDemandsUITestsLaunchTests.swift in Sources */,
 				864F444E29BAAE98009682B9 /* AddDemandView.swift in Sources */,

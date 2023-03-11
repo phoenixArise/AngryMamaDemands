@@ -10,14 +10,14 @@ import SwiftUI
 struct HouseBlockView: View {
     var name: String
     
+    var viewModel: HouseViewModel
+    
     var body: some View {
         RoundedRectangle(cornerRadius: 8)
             .fill(
                 LinearGradient(
                     gradient: .init(
-                        colors: AnyIterator { } .prefix(2).map {
-                            .random(saturation: 2 / 3, value: 0.85)
-                        }
+                        colors: viewModel.colors
                     ),
                     startPoint: .topLeading, endPoint: .bottomTrailing
                 )
@@ -45,6 +45,7 @@ struct HouseBlockView: View {
 
 struct HouseBlockView_Previews: PreviewProvider {
     static var previews: some View {
-        HouseBlockView(name: "House 0")
+        let houseVM = HouseViewModel()
+        HouseBlockView(name: "House", viewModel: houseVM)
     }
 }

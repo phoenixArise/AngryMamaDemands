@@ -13,16 +13,8 @@ enum DemandType {
 }
 
 enum Rule {
-    case byDay(whatDays: [Day])
+    case byDay(whatDays: [DayOfWeek])
     case byTurn
 }
 
-enum Day: String {
-    case Monday
-    case Tuesday
-    case Wednesday
-    case Thursday
-    case Friday
-    case Saturday
-    case Sunday
-}
+
