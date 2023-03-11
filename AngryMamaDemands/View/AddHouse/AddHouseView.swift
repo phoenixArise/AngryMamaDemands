@@ -12,7 +12,7 @@ import Combine
 struct AddHouseView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.managedObjectContext) var context
-    
+        
     @ObservedObject private var viewModel: AddHouseViewModel = AddHouseViewModel()
     
     @State var showAddMemberView = false
@@ -84,7 +84,7 @@ struct AddHouseView: View {
                 
                 Section {
                     Button("Save") {
-                        saveHouse()
+                        viewModel.addHouse(context)
                         dismiss()
                     }
                     .disabled(!viewModel.isValidHouse)
@@ -106,13 +106,6 @@ struct AddHouseView: View {
             .navigationTitle("House")
         }
     }
-    
-    private func saveHouse() {
-        let shared = CoreDataStack.shared
-        shared.save()
-    }
-    
-    
     
     struct addHouseView_Previews: PreviewProvider {
         static var previews: some View {

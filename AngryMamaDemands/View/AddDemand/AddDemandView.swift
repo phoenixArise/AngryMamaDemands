@@ -64,12 +64,10 @@ struct AddDemandView: View {
                 
                 Button("Save") {
                     viewModel.addDemand(to: houseViewModel)
-                    print("Submit")
                     dismiss()
                 }
                 
                 Button("Cancel") {
-                    print("Submit")
                     dismiss()
                 }
                 .foregroundColor(.red)

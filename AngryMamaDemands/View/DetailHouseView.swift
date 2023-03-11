@@ -7,9 +7,11 @@
 
 import SwiftUI
 import PhotosUI
+import CoreData
 
 struct DetailHouseView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.managedObjectContext) var context
     
     var house: House
     
@@ -17,22 +19,43 @@ struct DetailHouseView: View {
     
     init(house: House) {
         self.house = house
+        self.demandFetchRequest = {
+            FetchRequest(
+                entity: Demand.entity(),
+                sortDescriptors: [NSSortDescriptor(key: "name", ascending: true)],
+                predicate: NSPredicate(format: "%K == %@", "house.title", house.title!)
+            )
+        }()
+        
+        self.memberFetchRequest = {
+            FetchRequest(entity: Member.entity(),
+                         sortDescriptors: [NSSortDescriptor(key: "firstName", ascending: true)],
+                         predicate: NSPredicate(format: "%K == %@", "house.title", house.title!)
+            )
+        }()
     }
+    
     
     private var titleOfThisView = "House"
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Member.lastName, ascending: true)],
-        animation: .default)
-    private var members: FetchedResults<Member>
+    let memberFetchRequest: FetchRequest<Member>
+    private var members: FetchedResults<Member> {
+        memberFetchRequest.wrappedValue
+    }
+    
+    var demandFetchRequest: FetchRequest<Demand>
+    private var demands: FetchedResults<Demand> {
+        demandFetchRequest.wrappedValue
+    }
     
     @State private var showAddMemberView = false
+    @State private var showAddDemandView = false
     
     @State private var photosPickerItem: PhotosPickerItem? = nil
     @State private var name: String = ""
     @MainActor @State private var isLoading = false
     @State private var photoData: Data? = nil
-        
+    
     var body: some View {
         NavigationView {
             Form {
@@ -71,8 +94,16 @@ struct DetailHouseView: View {
                     }
                 }
                 
-                Section {
-                    Text("A Member")
+                Section {                   
+                    List{
+                        ForEach(members) { member in
+                            Text("\(member.firstName ?? "") \(member.lastName ?? "")")
+                        }
+                        .onDelete { offsets in
+                            viewModel.memberViewModels.remove(atOffsets: offsets)
+                        }
+                    }
+                    
                 } header: {
                     HStack {
                         Text("Members")
@@ -82,14 +113,28 @@ struct DetailHouseView: View {
                         } label: {
                             Image(systemName: "plus.circle.fill").foregroundColor(.blue).font(.subheadline)
                         }
-
                     }
                 }
                 
                 Section {
-                    
+                    List{
+                        ForEach(demands) { demand in
+                            Text("\(demand.name ?? "")")
+                        }
+                        .onDelete { offsets in
+                            viewModel.demandViewModels.remove(atOffsets: offsets)
+                        }
+                    }
                 } header: {
-                    Text("Demands")
+                    HStack {
+                        Text("Demands")
+                        Spacer()
+                        Button {
+                            showAddDemandView.toggle()
+                        } label: {
+                            Image(systemName: "plus.circle.fill").foregroundColor(.blue).font(.subheadline)
+                        }
+                    }
                 }
                 
                 Button("Save") {
@@ -102,6 +147,12 @@ struct DetailHouseView: View {
                 }
                 .foregroundColor(.red)
             }
+            .sheet(isPresented: $showAddDemandView, content: {
+                AddDemandView(houseViewModel: viewModel)
+            })
+            .sheet(isPresented: $showAddMemberView, content: {
+                AddMemberView(houseViewModel: viewModel)
+            })
             .navigationTitle(titleOfThisView)
         }
     }
@@ -131,6 +182,15 @@ struct DetailHouseView: View {
             
             let house = House(context: context)
             house.title = "House"
+            
+            let member = Member(context: context)
+            member.firstName = "Member"
+            member.lastName = "First"
+            member.house = house
+            
+            let demand = Demand(context: context)
+            demand.name = "Demand"
+            member.house = house
             
             preview.save()
             

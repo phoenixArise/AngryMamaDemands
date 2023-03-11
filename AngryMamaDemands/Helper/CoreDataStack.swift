@@ -51,6 +51,15 @@ final class CoreDataStack: ObservableObject {
         for i in 0...30 {
             let house = House(context: context)
             house.title = "house \(i)"
+            for j in 0...10 {
+                let member = Member(context: context)
+                member.firstName = "Member \(j)"
+                member.lastName = "of House \(j)"
+                
+                let demand = Demand(context: context)
+                demand.summary = "Summary"
+                demand.name = "Demand \(j) of House \(j)"
+            }
         }
         
         result.save()

@@ -11,7 +11,6 @@ fileprivate struct CheckboxToggleStyle: ToggleStyle {
     func makeBody(configuration: Configuration) -> some View {
         // 1
         Button(action: {
-            
             // 2
             configuration.isOn.toggle()
             

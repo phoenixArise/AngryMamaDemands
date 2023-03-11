@@ -13,7 +13,7 @@ struct Constant {
     static let unit = 125.0
 }
 
-enum DayOfWeek: Int, CaseIterable, Hashable, Identifiable {
+enum DayOfWeek: Int, CaseIterable, Identifiable {
     var id: Int {
         self.rawValue
     }
